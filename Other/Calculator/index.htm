@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <style>
+        @font-face{
+            font-family: external;
+            src: url(Font/RADIOLAND.TTF);
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            text-align: center;
+            display: inline-block;
+            background-color: red;
+            border-radius: 50px;
+            padding: 15px;
+            border: 2px solid floralwhite;
+        }
+        button{
+            font-size: 30px;
+            width: 120px;
+            height: 50px;
+            border-radius: 20px;
+            border: 1px solid floralwhite;
+            background-color: #000  ;
+            color: floralwhite;
+        }
+        .b{
+            font-family: external;
+
+        }
+        input{
+            font-family: external;
+            height: 50px;
+            width: 480px;
+            font-size: 30px;
+            border: 1px solid floralwhite;
+            border-radius: 10px;
+            background-color: #000;
+            color: floralwhite;
+        }
+        h1{
+            font-family: external;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>CALCULATOR</h1>
+    
+    <input id="src" type="text" >
+
+<br>
+<br>
+<button class="b" onclick="document.getElementById('src').value+='7'">7</button>
+<button class="b" onclick="document.getElementById('src').value+='8'">8</button>
+<button class="b" onclick="document.getElementById('src').value+='9'">9</button>
+<button onclick="document.getElementById('src').value+='*'">*</button>
+<br>
+<br>
+<button class="b" onclick="document.getElementById('src').value+='4'">4</button>
+<button class="b" onclick="document.getElementById('src').value+='5'">5</button>
+<button class="b" onclick="document.getElementById('src').value+='6'">6</button>
+<button onclick="document.getElementById('src').value+='/'">x</button>
+<br>
+<br>
+<button class="b" onclick="document.getElementById('src').value+='1'">1</button>
+<button class="b" onclick="document.getElementById('src').value+='2'">2</button>
+<button class="b" onclick="document.getElementById('src').value+='3'">3</button>
+<button onclick="document.getElementById('src').value+='-'">-</button>
+<br> 
+<br> 
+<button class="b" onclick="document.getElementById('src').value=''">C</button>
+<button class="b" onclick="document.getElementById('src').value+='0'">0</button>
+<button onclick="document.getElementById('src').value=eval(document.getElementById('src').value)">=</button>
+<button id="other" onclick="document.getElementById('src').value+='+'">+</button>
+
+</div>
+
+
+
+
+    
+    <script src="Script.js"></script>
+</body>
+</html>

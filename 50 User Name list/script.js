@@ -1,15 +1,19 @@
-var namelist =[];
+var namelist=[];
 
-function yourname(){
-    var names =prompt("Enter Your names");
+function namecerate() {
+    var names = prompt("Enter Your Names");
     return names;
-    
 }
 
-
 for (let index = 1; index <=50; index++) {
-    names = yourname();
-        namelist.push(names+"<br>");
-        
-    }
-    document.write("<h1>Your Names List<br>" + namelist + "</h1>");
+    names = namecerate();
+    namelist.push(names); 
+}
+
+document.write("<h1>Your Name List</h1>");
+document.write("<ol>");
+for (let index = 0; index < namelist.length; index++) {    
+    
+    document.write("<li>"+namelist[index]+"</li>"+ "<br>");
+}
+document.write("</ol>"); 
